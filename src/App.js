@@ -15,13 +15,13 @@ export const App = () => (
         <GlobalStyle />
         <Header />
 
-        <Route path="/my-profile">
-          <MyProfile />
-        </Route>
-        <Route path="/">
+        <Route exact path="/">
           <Home />
         </Route>
         
+        <Route path="/my-profile">
+          <MyProfile />
+        </Route>
     </ThemeProvider>
     </Switch>
   </Router>

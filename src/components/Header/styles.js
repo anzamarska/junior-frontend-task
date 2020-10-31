@@ -11,8 +11,24 @@ export const Root = styled.header`
 
 export const Wrapper = styled.div`
   height: 100%;
-  max-width: ${({ theme }) => theme.size.contentWidth};
+  max-width: ${({ theme }) => theme.size.navWidth};
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+
+  a{
+    text-decoration: none;
+    list-style: none;
+    float: left;
+    padding: 0 2rem;
+  }
 `;
+
+export const NavigationLink = styled.li`
+  margin-top: 0.75rem;
+  font-size: ${({ theme }) => theme.font.size.md};
+  font-weight: ${({ theme }) => theme.font.weight.bold};
+  color: ${({ theme }) => theme.color.black};
+  line-height: 1.8;
+  right: 0;
+`

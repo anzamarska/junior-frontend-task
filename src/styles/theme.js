@@ -26,6 +26,7 @@ export const theme = {
     }
   },
   size: {
-    contentWidth: "48rem"
+    contentWidth: "48rem",
+    navWidth: "92rem"
   }
 };

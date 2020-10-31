@@ -9,17 +9,20 @@ import { GlobalStyle, theme } from "./styles";
 
 export const App = () => (
   <Router>
-  
-    <ThemeProvider theme={theme}>
-      <Normalize />
-      <GlobalStyle />
-      <Header />
-      <Route path="/">
-        <Home />
-      </Route>
-      <Route path="/my-profile">
-        <MyProfile />
-      </Route>
+    <Switch>
+      <ThemeProvider theme={theme}>
+        <Normalize />
+        <GlobalStyle />
+        <Header />
+
+        <Route path="/my-profile">
+          <MyProfile />
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route>
+        
     </ThemeProvider>
+    </Switch>
   </Router>
 );

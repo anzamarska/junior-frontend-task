@@ -26,4 +26,10 @@ export const GlobalStyle = createGlobalStyle`
     font-family: TTCommons-regular,sans-serif;
     font-size: 16px;
   }
+
+  @keyframes moving-animation {
+    0% { transform: translateX(0px); }
+    100% { transform: translateX(1000px); }
+   }
+
 `;

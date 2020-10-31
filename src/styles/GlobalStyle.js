@@ -27,9 +27,14 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 16px;
   }
 
-  @keyframes moving-animation {
-    0% { transform: translateX(0px); }
-    100% { transform: translateX(1000px); }
-   }
+  @keyframes moveSlideshow {
+    100% { 
+      transform: translateX(66.6666%);  
+    }
+  }
 
 `;
+// @keyframes moving-animation {
+  //   0% { transform: translateX(0px); }
+  //   100% { transform: translateX(1000px); }
+  //  }

@@ -7,36 +7,49 @@ import slide4 from "../../../../assets/photos/slide-4.jpg";
 import slide5 from "../../../../assets/photos/slide-5.jpg";
 import slide6 from "../../../../assets/photos/slide-6.jpg";
 
-const SliderImg = styled.img`
-    object-fit: contain;
-    height: 100%;
-    margin: 0 0.8vw;
-    border-radius: 6%;
-    will-change: transform;
-    transition: transform 10s ease-out;
-    transform: translateX(0px);
-    animation-name: moving-animation;
-    animation-duration: 60s;
-    animation-iteration-count: infinite;
+const SliderWrapper = styled.div`
+        height: 200px;
+        margin: 15vh auto 0 auto;
+        position: relative;
+        overflow: hidden;
+        transform: translate3d(0, 0, 0);
+
+        div{
+            height: 200px;
+            width: 2526px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            transform: translate3d(0, 0, 0);
+        }
+
+    `;
+
+const SliderLineOne = styled.div`
+    animation: moveSlideshow 18s linear infinite;
 `
 
-const SliderWrapper = styled.div`
-    margin-top: 10vh;
-    position: relative;
-    width: 100vw;
-    height: 10em;
-    overflow: hidden;
-    right: 24rem;
-    `;
+const PartImg = styled.img`
+    margin-left: 15px;
+    border-radius: 6%;
+    height: 100%;
+    width: 265.67px;
+`
 
 const Slider = () => (
     <SliderWrapper>
-        <SliderImg src={slide1}/>
-        <SliderImg src={slide2}/>
-        <SliderImg src={slide3}/>
-        <SliderImg src={slide4}/>
-        <SliderImg src={slide5}/>
-        <SliderImg src={slide6}/>
+        <SliderLineOne>
+            <PartImg src={slide1} />
+            <PartImg src={slide2} />
+            <PartImg src={slide3} />
+            <PartImg src={slide4} />
+            <PartImg src={slide5} />
+            <PartImg src={slide6} />
+            <PartImg src={slide1} />
+            <PartImg src={slide2} />
+            <PartImg src={slide3} />
+        </SliderLineOne>
     </SliderWrapper>
 );
 

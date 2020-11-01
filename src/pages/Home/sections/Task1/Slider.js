@@ -11,8 +11,6 @@ import slide6 from "../../../../assets/photos/slide-6.jpg";
 const photos = [slide1, slide2, slide3, slide4, slide5, slide6,slide1, slide2, slide3];
 
 const Slider = () => (
-
-
     <SliderWrapper>
         <SliderLineOne>
             {photos.map(photo => <PartImg src={photo} />)}

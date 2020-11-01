@@ -1,5 +1,5 @@
 import React from 'react';
-import {SliderWrapper, SliderLineOne, PartImg} from './styles';
+import {SliderWrapper, SliderLineOne, PartImg, SliderLineTwo} from './styles';
 import slide1 from "../../../../assets/photos/slide-1.jpg";
 import slide2 from "../../../../assets/photos/slide-2.jpg";
 import slide3 from "../../../../assets/photos/slide-3.jpg";
@@ -20,6 +20,7 @@ const Slider = () => (
             <PartImg src={slide2} />
             <PartImg src={slide3} />
         </SliderLineOne>
+        <SliderLineTwo></SliderLineTwo>
     </SliderWrapper>
 );
 

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { WrapperUserInfo, AvatarUser,  } from './styles';
+import { Wrapper, WrapperLoader, AvatarUser,  } from './styles';
 import Loader from 'react-loader-spinner';
 
         
@@ -23,16 +23,18 @@ function MyProfile() {
     return (
         <>
             {(user.fetchInProgress)
-               ? <Loader
-                type="Oval"
-                color="#0000FF"
-                height={80}
-                width={80}
-                />
-            :<WrapperUserInfo>
+               ? <WrapperLoader>
+                   <Loader
+                    type="Oval"
+                    color="#0000FF"
+                    height={80}
+                    width={80}
+                    />
+                </WrapperLoader>
+            :<Wrapper>
                 <h1>{user.userName}</h1>
                 <AvatarUser src={user.avatar_url} alt="user profile"/>  
-            </WrapperUserInfo>}
+            </Wrapper>}
         </>
     )
 }

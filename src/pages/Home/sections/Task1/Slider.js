@@ -7,18 +7,15 @@ import slide4 from "../../../../assets/photos/slide-4.jpg";
 import slide5 from "../../../../assets/photos/slide-5.jpg";
 import slide6 from "../../../../assets/photos/slide-6.jpg";
 
+
+const photos = [slide1, slide2, slide3, slide4, slide5, slide6,slide1, slide2, slide3];
+
 const Slider = () => (
+
+
     <SliderWrapper>
         <SliderLineOne>
-            <PartImg src={slide1} />
-            <PartImg src={slide2} />
-            <PartImg src={slide3} />
-            <PartImg src={slide4} />
-            <PartImg src={slide5} />
-            <PartImg src={slide6} />
-            <PartImg src={slide1} />
-            <PartImg src={slide2} />
-            <PartImg src={slide3} />
+            {photos.map(photo => <PartImg src={photo} />)}
         </SliderLineOne>
         <SliderLineTwo></SliderLineTwo>
     </SliderWrapper>

@@ -32,9 +32,4 @@ export const GlobalStyle = createGlobalStyle`
       transform: translateX(66.6666%);  
     }
   }
-
 `;
-// @keyframes moving-animation {
-  //   0% { transform: translateX(0px); }
-  //   100% { transform: translateX(1000px); }
-  //  }

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { WrapperUserInfo, AvatarUser } from './styles';
         
 function MyProfile() {
     const [name, setName] = useState('');
@@ -20,10 +21,10 @@ function MyProfile() {
     }
 
     return (
-        <div>
+        <WrapperUserInfo>
             <h1>{name}</h1>
-            <img src={avatar_url} alt="user profile"/>  
-        </div>
+            <AvatarUser src={avatar_url} alt="user profile"/>  
+        </WrapperUserInfo>
     )
 }
 

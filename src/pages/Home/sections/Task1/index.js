@@ -1,10 +1,7 @@
 import React from "react";
-
 import { ExamplePreview } from "components/ExamplePreview";
 import * as Section from "components/PageSection";
-
 import previewImg from "./assets/slider.gif";
-
 import Slider from "./Slider";
 
 export const Task1 = () => (

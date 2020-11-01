@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from "styled-components";
 
 export const SliderWrapper = styled.div`
@@ -17,7 +16,6 @@ export const SliderWrapper = styled.div`
             height: 100%;
             transform: translate3d(0, 0, 0);
         }
-
     `;
 
 export const SliderLineOne = styled.div`
